@@ -81,3 +81,13 @@ if (rightPanel.parentNode.clientWidth >= 769) {
 
   rightPanel.style.height = height;
 }
+
+window.addEventListener("resize", (event) => {
+  if (rightPanel.parentNode.clientWidth >= 769) {
+    const height = rightPanel.parentNode.clientHeight;
+
+    rightPanel.style.height = height;
+  } else {
+    rightPanel.style.height = "100%";
+  }
+});
