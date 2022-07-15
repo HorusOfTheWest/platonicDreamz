@@ -79,6 +79,11 @@ p {
   justify-self: center !important;
 }
 
+#right-panel {
+  align-content: center;
+  display: grid;
+}
+
 .l-spacing {
   letter-spacing: 3px;
 }
@@ -109,4 +114,24 @@ p {
 }
 .fill-width {
   width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

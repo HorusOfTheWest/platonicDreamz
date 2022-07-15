@@ -66,7 +66,7 @@
           </div>
         </div>
       </nav>
-      <main class="container-fluid p-0 page-container d-flex flex-column">
+      <main class="container-md p-0 page-container d-flex flex-column">
         <div
           class="container-fluid p-0"
           id="keycaps-page"
@@ -135,13 +135,9 @@
               </button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-7 pt-5">
-              <div
-                class="width-fc mx-auto justify-center-self l-spacing"
-                @mouseover="console.log('hello')"
-                @mouseout="console.log('mello')"
-              >
+          <div class="row g-2 px-1">
+            <div class="col-md-7 pt-5">
+              <div class="width-fc mx-auto justify-center-self l-spacing">
                 <div class="width-fc">
                   <p class="h2 px-3">Artisan Keycaps</p>
                   <hr />
@@ -149,12 +145,16 @@
                 <p>
                   Offering cute stylish <strong>keycaps</strong>, like the one
                   you see just above.<br />
-                  Each cap is handmade by me with love
+                  Each cap is handmade, by me, with love
                   <i class="bi bi-heart-fill text-danger"></i>
                 </p>
               </div>
             </div>
-            <div class="col-5 mt-4 pt-5 fill-height" style="min-height: 100%">
+            <div
+              class="col-md-5 mt-4 fill-height"
+              id="right-panel"
+              style="min-height: 100%"
+            >
               <div
                 class="width-fc mx-auto justify-center-self align-self-center h5 l-spacing-sm"
               >
