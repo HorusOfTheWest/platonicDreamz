@@ -76,13 +76,9 @@ const setKeycapsPage = () => {
 document.getElementById("keycaps-page").innerHTML = setKeycapsPage();
 
 const rightPanel = document.getElementById("right-panel");
-if (rightPanel.parentNode.clientWidth >= 769) {
-  const height = rightPanel.parentNode.clientHeight;
 
-  rightPanel.style.height = height;
-}
-
-window.addEventListener("resize", (event) => {
+const setHeightofRightPanel = () => {
+  console.log("resize");
   if (rightPanel.parentNode.clientWidth >= 769) {
     const height = rightPanel.parentNode.clientHeight;
 
@@ -90,4 +86,14 @@ window.addEventListener("resize", (event) => {
   } else {
     rightPanel.style.height = "100%";
   }
-});
+};
+
+setHeightofRightPanel();
+
+window.addEventListener("resize", () => setHeightofRightPanel());
+
+document
+  .querySelector("#home-link")
+  .addEventListener("click", () =>
+    setTimeout(() => setHeightofRightPanel(), 100)
+  );

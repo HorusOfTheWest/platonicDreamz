@@ -18,10 +18,6 @@ p {
   background-color: whitesmoke;
 }
 
-.pos-rel {
-  position: relative;
-}
-
 .caption {
   z-index: 100;
   position: absolute;
@@ -39,26 +35,6 @@ p {
   letter-spacing: 1.5px;
   font-size: 2rem;
   pointer-events: none;
-}
-
-.justify-center .content {
-  justify-content: center;
-}
-
-.justify-center-self {
-  justify-self: center !important;
-}
-
-.align-center .content {
-  align-content: center;
-}
-
-.align-center .self {
-  align-self: center;
-}
-.center-element {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-container {
@@ -96,24 +72,12 @@ p {
   align-self: center;
 }
 
-.height-fc {
-  height: fit-content;
-}
-
 .width-fc {
-  width: fit-content;
-}
-
-.all-fc {
-  height: fit-content;
   width: fit-content;
 }
 
 .fill-height {
   height: 100%;
-}
-.fill-width {
-  width: 100%;
 }
 
 /* width */
