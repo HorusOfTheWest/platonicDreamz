@@ -99,3 +99,12 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.navbar-brand strong {
+  color: black;
+  cursor: default;
+}
+
+.nav-link {
+  cursor: pointer !important;
+}
